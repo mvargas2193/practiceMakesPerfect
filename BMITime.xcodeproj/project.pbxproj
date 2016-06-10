@@ -14,6 +14,7 @@
 		44E55F8E1D0A6043003A21CB /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 44E55F8C1D0A6043003A21CB /* Main.storyboard */; };
 		44E55F901D0A6043003A21CB /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 44E55F8F1D0A6043003A21CB /* Assets.xcassets */; };
 		44E55F931D0A6043003A21CB /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 44E55F911D0A6043003A21CB /* LaunchScreen.storyboard */; };
+		44E55F9C1D0A6072003A21CB /* BNRPerson.m in Sources */ = {isa = PBXBuildFile; fileRef = 44E55F9B1D0A6072003A21CB /* BNRPerson.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -29,6 +30,8 @@
 		44E55F8F1D0A6043003A21CB /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		44E55F921D0A6043003A21CB /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		44E55F941D0A6043003A21CB /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		44E55F9A1D0A6072003A21CB /* BNRPerson.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = BNRPerson.h; path = ../BNRPerson.h; sourceTree = "<group>"; };
+		44E55F9B1D0A6072003A21CB /* BNRPerson.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = BNRPerson.m; path = ../BNRPerson.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -61,6 +64,8 @@
 		44E55F7F1D0A6043003A21CB /* BMITime */ = {
 			isa = PBXGroup;
 			children = (
+				44E55F9A1D0A6072003A21CB /* BNRPerson.h */,
+				44E55F9B1D0A6072003A21CB /* BNRPerson.m */,
 				44E55F831D0A6043003A21CB /* AppDelegate.h */,
 				44E55F841D0A6043003A21CB /* AppDelegate.m */,
 				44E55F861D0A6043003A21CB /* MasterViewController.h */,
@@ -156,6 +161,7 @@
 			files = (
 				44E55F851D0A6043003A21CB /* AppDelegate.m in Sources */,
 				44E55F881D0A6043003A21CB /* MasterViewController.m in Sources */,
+				44E55F9C1D0A6072003A21CB /* BNRPerson.m in Sources */,
 				44E55F821D0A6043003A21CB /* main.m in Sources */,
 				44E55F8B1D0A6043003A21CB /* DetailViewController.m in Sources */,
 			);

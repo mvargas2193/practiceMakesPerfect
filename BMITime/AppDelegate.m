@@ -8,6 +8,7 @@
 
 #import "AppDelegate.h"
 #import "DetailViewController.h"
+#import "BNRPerson.h"
 
 @interface AppDelegate () <UISplitViewControllerDelegate>
 
@@ -18,11 +19,28 @@
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions {
     // Override point for customization after application launch.
-    UISplitViewController *splitViewController = (UISplitViewController *)self.window.rootViewController;
-    UINavigationController *navigationController = [splitViewController.viewControllers lastObject];
-    navigationController.topViewController.navigationItem.leftBarButtonItem = splitViewController.displayModeButtonItem;
-    splitViewController.delegate = self;
+//    UISplitViewController *splitViewController = (UISplitViewController *)self.window.rootViewController;
+//    UINavigationController *navigationController = [splitViewController.viewControllers lastObject];
+//    navigationController.topViewController.navigationItem.leftBarButtonItem = splitViewController.displayModeButtonItem;
+//    splitViewController.delegate = self;
+    
+    
+    BNRPerson *mikey = [[BNRPerson alloc]init];
+    [mikey setWeightInKilos:92];
+    [mikey setHeightInMeters:1.8];
+    float height = [mikey heightInMeters];
+    int weight = [ mikey weightInKilos];
+    NSLog(@"Mikey is %.2f meters tall and weighs %d kilograms", height, weight);
+    
+    float bmi = [mikey bodyMassIndex];
+    
+    NSLog(@"Mikey has a BMI of %f", bmi);
+    
     return YES;
+    
+    
+    
+    
 }
 
 - (void)applicationWillResignActive:(UIApplication *)application {
